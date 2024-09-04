@@ -1,0 +1,269 @@
+body {
+    display: flex;
+    gap: 5vw;
+    margin-left: 5vw;
+    margin-top: 5vh;
+    align-items: stretch;
+}
+
+#left-part {
+    flex-basis: 30vw;
+    /* background-color: grey; */
+    background: linear-gradient(rgb(144, 144, 144), rgb(20, 18, 18));
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: space-around;
+    border-radius: 25px;
+    box-shadow: 0.8vw 0.8vw #9E643C;
+
+}
+
+#left-part * {
+    color: white;
+}
+
+#right-part {
+    flex-basis: 55vw;
+    display: flex;
+    flex-direction: column;
+    gap: 2vw;
+    justify-content: space-between;
+}
+
+#header-left-part {
+    margin-top: 1vh;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+#img-profil {
+    width: 10vw;
+    border-radius: 100vw;
+}
+
+#infos-left-part {
+    width: 90%;
+    display: flex;
+    flex-direction: column;
+    gap: 2vw;
+    align-items: center;
+
+}
+
+.infos {
+    display: flex;
+    width: 90%;
+    justify-content: space-between;
+}
+
+.infos-name {
+    width: 8vw;
+}
+
+.infos-value {
+    width: 14vw;
+}
+
+.sport {
+    background-color: rgb(97, 95, 95);
+    color: gray;
+    border: solid 1px white;
+    border-radius: 30px;
+    padding: 1vh;
+    width: 25vw;
+    font-size: medium;
+}
+
+#group-button {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 1vw;
+
+}
+
+#interet-left-part {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+#reseaux-left-part {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    padding: 5vh;
+}
+
+#reseaux {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 1vh;
+    width: 30vw;
+}
+
+#right-part>div {
+    border: 2px solid #9E643C;
+    box-shadow: 0.8vw 0.8vw #9e633c5d;
+    border-radius: 10vw;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+
+}
+
+.header-formation,
+.content-formation {
+    display: flex;
+    justify-content: space-between;
+    gap: 2vw;
+    align-items: center;
+    width: 30vw;
+
+}
+
+.intituler-formation,
+.centre-formation {
+    flex-basis: 15vw;
+    text-align: end;
+}
+
+.formation {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    border-bottom: 2px solid #9E643C;
+}
+
+.formation-part {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 4vh;
+    padding: 4vh;
+}
+
+.experience {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    width: 30vw;
+    border-bottom: 2px solid #9E643C;
+    padding-top: 2vh;
+}
+
+.header-experience {
+    display: flex;
+    justify-content: space-between;
+    width: 30vw;
+    gap: 2vw;
+}
+
+.date-experience {
+    flex-basis: 20vw;
+}
+
+.intitule-experience {
+    flex-basis: 35vw;
+    text-align: end;
+}
+
+.entreprise-experience,
+.list-mission {
+    width: 30vw;
+}
+
+.list-mission>li {
+    list-style: url(./arrowsvgbrown\ \(1\).svg);
+}
+
+#experience-part {
+    padding-bottom: 5vh;
+}
+
+.competence {
+    display: flex;
+    align-items: center;
+    width: 80%;
+}
+
+.competence>img {
+    width: 8vw;
+}
+
+.competence>h3 {
+    color: #9E643C;
+}
+
+.range {
+    margin-left: 1vw;
+    width: 80%;
+    border: 2px solid #9E643C;
+    border-radius: 25px;
+}
+
+#quatre-vingt {
+    background-color: #9E643C;
+    width: 50%;
+    border-radius: 25px;
+    text-align: center;
+}
+
+@media (max-width :680px) {
+    body {
+        flex-direction: column;
+    }
+
+    #img-profil {
+        width: 35vw;
+    }
+
+    .infos-name,
+    .infos-value {
+        width: auto;
+    }
+
+    #group-button {
+        flex-direction: row;
+        flex-wrap: wrap;
+        justify-content: center;
+    }
+
+    .header-formation,
+    .content-formation {
+        width: 90vw;
+    }
+
+    #reseaux-left-part {
+        padding-top: 0vh;
+    }
+
+    .date-formation,
+    .intitule-formation,
+    .ville-formation,
+    .centre-formation {
+        flex-basis: auto;
+        padding: 2vw;
+    }
+
+    .formation,
+    .experience {
+        width: 85%;
+        padding: 3vw;
+        font-size: 1rem;
+    }
+
+    .header-experience,
+    .content-formation,
+    .list-mission,
+    .entreprise-experience {
+        width: 80vw;
+    }
+.competence > img{
+    width: 20vw;
+}
+}
