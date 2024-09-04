@@ -211,6 +211,19 @@ body {
     width: 50%;
     border-radius: 25px;
     text-align: center;
+    animation: animateSkillsTofifty 2s ;
+}
+
+
+@keyframes animateSkillsTofifty {
+    from {
+        width: 0%;
+    }
+
+    to {
+        width: 50%;
+    }
+
 }
 
 @media (max-width :680px) {
@@ -266,4 +279,5 @@ body {
 .competence > img{
     width: 20vw;
 }
+
 }
